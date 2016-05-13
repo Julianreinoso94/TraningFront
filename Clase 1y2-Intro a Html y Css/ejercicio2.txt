@@ -1,0 +1,9 @@
+Crear un menú horizontal básico:
+
+1) El css debe estar en la misma página, usando el tag <style> en el head.
+2) Para maquetarlo debe usarse el elemento <ul> que representa una lista desordenada.
+3) Debe ser claro que se trata de un menú navegable (deben sobreescribirse los estilos de lista
+   heredados por defecto, y deben agregarse nuevos para darle otro look and feel).
+4) (Opcional) Setear un cursor de mano (efecto 'clickeable') para el menú con CSS. Consultar o google.
+5) (Opcional) Setear una pseudo-clase para que cuando pasemos el mouse por encima
+   de un item del menu la apariencia cambie.

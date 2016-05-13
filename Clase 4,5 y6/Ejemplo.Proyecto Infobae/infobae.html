@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog entry</title>
+	<style>
+		body
+		{
+			color: black;
+		}
+
+		.container{
+			width: 960px;
+			margin: 0 auto;
+		}
+
+		.fila{
+			display: block;
+			width: 100%;
+		}
+
+		.fila::after{
+			clear: both;
+		}
+
+		*[class*="columna"]{
+			float: left;
+		}
+
+		*[class*="columna"] > img{
+			max-width: 100%;
+		}
+
+
+		.columna10{
+			width: 10%;
+		}
+
+		.columna33{
+			width: 33%;
+		}
+
+		.columna90{
+			width: 90%;
+		}
+
+		.columna100{
+			width: 100%;
+		}
+
+		.columna66{
+			width: 66%;
+		}
+	</style>
+</head>
+<body>
+	<main class="container">
+		<article>
+			<h1>Titulo</h1>
+			<div class="fila">
+				<div class="columna10">
+					<img src="http://cdn01.ib.infobae.com/adjuntos/162/imagenes/014/707/0014707198.jpg" alt="">
+				</div>
+				<div class="columna90"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae reiciendis nisi ad expedita unde est sint enim beatae consectetur aspernatur, deleniti labore maiores ea quas modi. Excepturi voluptatibus quo, non!</p></div>
+			</div>
+			<div class="fila">
+				<div class="columna66">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores itaque error, tempora delectus consequuntur asperiores maxime ipsa voluptas veritatis animi, impedit numquam deleniti, libero vitae vero sunt culpa consectetur recusandae.</p>
+					<p>Enim vel ad in commodi amet ducimus, voluptates sint ipsam sunt, temporibus officiis iusto dolorem ratione tempore nemo doloremque. Corrupti, eum. Similique autem cum deleniti incidunt minus assumenda, nostrum quam!</p>
+					<p>Nisi iusto, repudiandae dolore earum enim amet suscipit mollitia eum numquam, veritatis explicabo. Officia quae architecto, consectetur voluptatem veniam vero eum blanditiis esse error facilis ipsam doloribus, placeat, in assumenda?</p>
+				</div>
+				<div class="columna33 ads">
+					<div class="fila">
+						<div class="columna100">
+							<img src="http://cdn01.ib.infobae.com/adjuntos/162/imagenes/014/635/0014635731.jpg" alt="">
+						</div>
+					</div>
+					<div class="fila">
+						<div class="columna100">
+							<img src="http://cdn01.ib.infobae.com/adjuntos/162/imagenes/014/635/0014635731.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+	</main>
+</body>
+</html>

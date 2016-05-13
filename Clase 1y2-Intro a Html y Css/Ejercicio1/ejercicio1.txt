@@ -1,0 +1,12 @@
+Crear un sitio web básico, teniendo en cuenta su estructura y apariencia visual:
+
+1- Debe tener un titulo visible y un subtitulo
+2- Debe tener al menos una imagen
+3- Debe tener en alguna parte una estructura por columnas, ya sea imagen + texto,
+   más de un texto, o algún tipo de menú vertical.
+
+
+Tener en cuenta:
+- Archivos html y css deben estar por separado.
+- Debe respetar la estructura de un archivo html (html/head/body).
+- Para setear propiedades específicas de CSS, pueden consultar o googlear.

@@ -1,0 +1,160 @@
+
+escuelita@Soporte-PC MINGW64 ~/Desktop/Ejercicios
+$ cd -/.ssh
+bash: cd: -/: invalid option
+cd: usage: cd [-L|[-P [-e]] [-@]] [dir]
+
+escuelita@Soporte-PC MINGW64 ~/Desktop/Ejercicios
+$ cd ~/.ssh
+bash: cd: /c/Users/escuelita/.ssh: No such file or directory
+
+escuelita@Soporte-PC MINGW64 ~/Desktop/Ejercicios
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/escuelita/.ssh/id_rsa):
+Created directory '/c/Users/escuelita/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/escuelita/.ssh/id_rsa.
+Your public key has been saved in /c/Users/escuelita/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:3EC7Kd/vDbN5WVFVw7QtlKSvZv1s4Op2uxzngiBF0d0 escuelita@Soporte-PC
+The key's randomart image is:
++---[RSA 2048]----+
+|        . .o o===|
+|       . .. .oo.E|
+|        o.  . ..o|
+|       . =.  . o |
+|      . S..   . .|
+|       o...  o. .|
+|        ....*oo+.|
+|           +oB**.|
+|           +B+==+|
++----[SHA256]-----+
+
+escuelita@Soporte-PC MINGW64 ~/Desktop/Ejercicios
+$ cd ~/.ssh
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ cat ~/.ssh/rsa.pub
+cat: /c/Users/escuelita/.ssh/rsa.pub: No such file or directory
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ cat /.ssh/id_rsa.pub
+cat: /.ssh/id_rsa.pub: No such file or directory
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ ls
+id_rsa  id_rsa.pub
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ clip < ~/.ssh/id_rsa.pub
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ git config --global user.name "Julian"
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ $ git config --global user.email julianreinoso94@gmail.com
+bash: $: command not found
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ git config --global user.email julianreinoso94@gmail.com
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ git config --list
+core.symlinks=false
+core.autocrlf=true
+core.fscache=true
+color.diff=auto
+color.status=auto
+color.branch=auto
+color.interactive=true
+help.format=html
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+diff.astextplain.textconv=astextplain
+rebase.autosquash=true
+credential.helper=manager
+user.name=Julian
+user.email=julianreinoso94@gmail.com
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ cd~
+bash: cd~: command not found
+
+escuelita@Soporte-PC MINGW64 ~/.ssh
+$ cd
+
+escuelita@Soporte-PC MINGW64 ~
+$ git clone git@github.com:Julianreinoso94/EJ1.Training-Fron-End.git
+Cloning into 'EJ1.Training-Fron-End'...
+The authenticity of host 'github.com (192.30.252.121)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.121' (RSA) to the list of known hosts.
+warning: You appear to have cloned an empty repository.
+Checking connectivity... done.
+
+escuelita@Soporte-PC MINGW64 ~
+$ cd EJ!.Training-fron-End
+bash: !.Training-fron-End: event not found
+
+escuelita@Soporte-PC MINGW64 ~
+$ cd EJ1.Training-Fron-End/
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$ echo "# EJ1.Training-Fron-End" >> README.md
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$ git commit -m "primer commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+        README.md
+
+nothing added to commit but untracked files present
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$ git add README.md
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$ git commit -m "primera comprometerse"
+[master (root-commit) 5befacc] primera comprometerse
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$ git remote add origen git@github.com: Julianreinoso94 / EJ1.Training-Fron-End .git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$ git remote add origen git@github.com: Julianreinoso94 / EJ1.Training-Fron-End .git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=<push|fetch>]
+                          set up remote as a mirror to push to or fetch from
+
+
+escuelita@Soporte-PC MINGW64 ~/EJ1.Training-Fron-End (master)
+$

@@ -1,0 +1,13 @@
+Ejercicio 3:
+
+Escribir el HTML y el CSS necesario para mostrar un sitio similar al presentado en el mockup (mockup.jpg).
+
+Tener en cuenta:
+
+- Para setear la imagen de fondo en el header, al haber texto encima, se debe usar CSS.
+  La imagen es landscape.jpg.
+- El parrafo y la imagen del perfil (esta si es una <img>) deben estar maquetados como columnas con divs.
+- El "aqui" de "haga click aqui", en el parrafo, debe llevar al usuario a una pagina distinta (otro
+  archivo .html).
+- Para la segunda pagina se debe seguir el mockup 2 (mockup2.jpg)
+- (Opcional) El borde del parrafo debe ser con puntas redondeadas como la imagen. Googlear "border-radius".

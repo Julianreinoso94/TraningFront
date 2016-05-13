@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{	
+			box-sizing: border-box;
+		}
+		.fila{
+			width: 100%;
+			display: block;			
+		}
+		.fila::after{
+			clear:both;
+		}
+		.fila:after{
+			clear:both;
+		}
+
+		*[class^="columna"]{
+			display: block;
+			float: left;
+			overflow: hidden;
+			height: 135px;
+		}
+		.columna50{
+			width: 50%;
+		}
+		.columna25{
+			width: 25%;
+		}
+		.columna100{
+			width: 100%;
+		}
+		*[class^="columna"] > img{
+			max-width: 100%;
+		}
+
+		.hero > *[class^="columna"] {
+			height: 270px;
+		}
+
+	</style>
+</head>
+<body>
+	<main>
+		<div class="fila hero">
+			<div class="columna50">
+				<img src="images/instabeat-feature.jpg" alt="">
+			</div>
+			<div class="columna25">
+				<div class="fila">
+					<div class="columna100">
+						<img src="images/avid03.jpg" alt="">
+					</div>
+				</div>
+				<div class="fila">
+					<div class="columna100">
+						<img src="images/Basis_featured.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="columna25">
+				<div class="fila">
+					<div class="columna100">
+						<img src="images/BMC_featured.jpg" alt="">
+					</div>
+				</div>
+				<div class="fila">
+					<div class="columna100">
+						<img src="images/bay-innovation_portada.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="columna25"></div>
+			<div class="columna25"></div>
+			<div class="columna25"></div>
+			<div class="columna25"></div>
+		</div>
+		<div class="fila">
+			<div class="columna25"></div>
+			<div class="columna25"></div>
+			<div class="columna25"></div>
+			<div class="columna25"></div>
+		</div>
+	</main>
+</body>
+</html>

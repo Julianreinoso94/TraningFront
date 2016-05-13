@@ -1,0 +1,14 @@
+Problema 1
+
+ Dado un vector con numeros enteros:
+  Escriba tres funciones que realicen la suma de todos los elementos del vector utilizando: X
+   1) for
+   2) while
+   3) recursion
+
+ Problema 2
+
+ Dado dos vectores: X
+
+  Escriba una funcion que retorne un vector alternando elementos de ambos vectores. Por ejemplo:
+   Dado vectores [1,2,3] y [a,b,c] que retorne [1,a,2,b,3,c]

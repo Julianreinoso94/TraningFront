@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive test</title>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		.row{
+			display: block;
+			width: 100%;
+		}
+
+		div[class^="col-"]{
+			float: left;
+			display: block;
+		}
+		.col-3{
+			width: 33%;
+		}
+		.row::after{
+			clear:both;
+		}
+		.yellow,.blue,.green{
+			height: 100px;
+		}
+		.yellow{
+			background-color: rgba(255,255,0,1);
+		}
+		.blue{
+			background-color: rgba(0,0,255,1);			
+		}
+		.green{
+			background-color: rgba(0,255,0,1);
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<section class="row">
+			<div class="col-3 yellow">
+				
+			</div>
+			<div class="col-3 blue">
+				
+			</div>
+			<div class="col-3 green"></div>
+		</section>
+	</main>
+</body>
+</html>

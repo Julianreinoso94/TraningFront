@@ -1,0 +1,86 @@
+body
+{
+font-family:'Arial,sans-serif';
+/*background-color: #f3f3f3;*/
+background-color: blue;
+}
+
+#wrapper
+{
+ max-width:960px;/*960px*/
+ margin: 0 auto;
+ background-color:#fff;
+ padding:1px;/*32px*/
+ background-image: url(images/Fondo.jpg);
+ background-attachment:fixed;
+ background-size: 100% 100%;
+ color:#fff;
+
+}
+
+header
+{
+	/*background-color:#59d5d8;*/
+	width: 900px
+	height:500px;/*150px*/
+	padding:4px;
+	background:rgba(255,255,255,0.3);
+	display: block;
+
+	
+}
+.menu
+{
+  float: left;
+
+}
+	.columna90
+	{
+		/*padding-left:px;*/
+		width:90%;
+		margin-top:0px;                                             
+
+
+	}
+
+	.columna10
+	{
+      /*width: 10%;*/
+      float: left;
+   	display: inline-block;
+	width: 10%;
+	margin: 1%;	
+
+	}
+
+	li
+	{
+	float: left;
+    list-style-type: none;
+    margin: 6px;
+    padding: 0;
+	}
+	
+	li a:hover 
+	{
+    /* background-color: #111;*/
+    color:#db5800;
+}
+
+a:link   
+{   
+ text-decoration:none;
+    
+}   
+
+@media(min-width:600px)
+{
+    body 
+    {
+    	background-color: #000;
+    }
+  }
+
+
+
+

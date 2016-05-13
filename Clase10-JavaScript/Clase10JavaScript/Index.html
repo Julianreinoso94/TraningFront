@@ -1,0 +1,56 @@
+:<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+	<body>
+				
+				
+				<script>
+					var v1 =[1,2,3,4,5,6];
+					var v2=[2,3,4,5,6,7];
+					var suma=0;
+					
+					for(var i=0 ;i<v1.length;i++)
+				   {
+					 suma+=v1[i];
+
+                    console.log(v1.length);
+                    console.log(suma);
+
+
+				  }
+					
+					document.write(suma);
+				
+				//Recursion/////////////////////////////////////////////////////////////
+
+				var v1 =[1,2,3,4,5,6];
+			    var v2=[2,3,4,5,6,7];
+			    var resultado=0;
+			    var valores=[1,2,3,100,500,25]
+
+				function suma(v1, i)
+				{
+				
+					if(!i )
+					{
+						i=0;
+
+					}
+					resultado=resultado+v1[i];
+
+					if(i+1==vector.length)
+					{
+						return resultado;
+					}
+					return suma(v1,i++);
+				}
+				return.log(suma(valores));
+			}
+
+
+				
+				</script>
+	</body>
+</html>
