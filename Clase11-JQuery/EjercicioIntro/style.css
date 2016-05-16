@@ -1,0 +1,45 @@
+h1
+{
+	font-family: "Simonetta", "Trebuchet MS", Arial, sans-serif;
+    color: #454545;
+    font-size: 2.6em;
+        font-weight: bold;
+}
+h2 {
+    font-family: "Simonetta", "Trebuchet MS", Arial, sans-serif;
+    color: #484848;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    }
+
+.pad-img
+{
+	padding:2px;
+	margin-top:2px;
+	margin-left: 2px;
+}
+h3
+{
+	font-weight:bold;
+}
+
+.row
+{
+  background-color: #fff;
+}
+.back
+{
+	background-color:grey;
+}
+
+.negrita
+{
+  b
+}
+
+.max 
+{
+  width: 100%;
+}
+
