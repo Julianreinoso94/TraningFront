@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <script type="text/javascript"  src="js/jquery-2.2.3.js"></script>
+
+
+  <link rel="stylesheet" href="css\bootstrap.min.css">/<!-- *C:\Users\escuelita\Desktop\Ejercicios Training\bootstrap\css*/ -->
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>	Index</title>
+</head>
+						<body>
+							<div class="container"> 
+							  <div class="row">
+								 		<div class="col-sm-1 bg-warning back max"> 
+
+										 </div>
+										 <div class="col-sm-7 row "> 
+										   <div class="row"> 
+											     <h1 id="nom">  Jake Rocheleau </h1>
+													
+													<h5 id="Detalles">Freelance Writer & Web Developer</h5>
+
+													Hudson, Massachusetts, USA
+												    jakerocheleau@gmail.com
+													My Portfolio • @jakerocheleau
+
+											   </div>	
+											   <div class="row" id="about"> 
+											  <h2> My History & Profile</h2>
+	I'm a 21 year old web designer and developer working out of eastern Massachusetts. I have been coding websites ever since sophomore year of high school in my first web design class. Fast-forward a few years later I was landing freelance projects most of my junior and senior years. During this time I was also working part-time at Best Buy's Geek Squad division.
+
+	After graduating High School in summer 2009 I started writing on various web design blogs along with launching my own startup ideas. A few months later in September 2009 I spent a couple months studying at Worcester Polytechnic Institute in Worcester, Massachsuetts. However I left in January 2010 to pursue a career on my own. I now work doing freelance writing and building side-projects in my spare time.
+
+											   </div>	
+
+											   <div class="row" id="exp" >
+													   <div class="col-sm-4  ">
+
+													   <h5>Experience</h4>
+													   <li itemprop="itemListElement">HTML5/CSS3</li>
+													   <li itemprop="itemListElement">HTML5/CSS3</li>
+													   <li itemprop="itemListElement">HTML5/CSS3</li>
+													   <li itemprop="itemListElement">HTML5/CSS3</li>
+													   <li itemprop="itemListElement">HTML5/CSS3</li>
+													   <li itemprop="itemListElement">HTML5/CSS3</li>
+													   	
+													   </div>
+
+													    <div class="col-sm-4">
+													    <ul>
+													    	<li itemprop="itemListElement">HTML5/CSS3</li>
+													    	<li itemprop="itemListElement">HTML5/CSS3</li>
+													    	<li itemprop="itemListElement">HTML5/CSS3</li>
+													    	<li itemprop="itemListElement">HTML5/CSS3</li>
+													    	<li itemprop="itemListElement">HTML5/CSS3</li><li itemprop="itemListElement">HTML5/CSS3</li>
+													    </ul>
+													   	
+													   </div>
+													    <div class="col-sm-4">
+													    <ul>
+													    	
+													    </ul>
+													    </div>
+
+													   <div class="row">
+													 <h4>Past Education</h4>
+													  <p> 
+                                                Hudson High School graduate of 2009.</p>
+													   	
+													   </div>
+													   <div class="row">
+													
+													  <h4> Work Experience</h4>
+
+					<p>Freelance Web Designer/Developer ~ 2007-2009</p>
+
+	            <p>Best Buy - Geek Squad In-Store Agent ~ 2008-2009</p>
+
+	<p>Freelance Writer for Hongkiat.com ~ 2011-Present</p>
+
+
+	<p> </p>
+
+
+													   </div>
+											   	
+											   </div>	
+
+
+											 </div>
+							 			<div class="class-col-sm-4 back max"> 
+
+							 			</div>
+
+						</div>
+						</div>
+
+						<script type="text/javascript"  src="js/jquery-2.2.3.js" >
+							
+							var x = document.getElementsByTagName("LI").length;
+
+
+							
+						</script>
+						<script type="text/javascript" >//JSON/////////////////////////////////////////////////////
+							
+
+							var cvtest =
+							{
+								'nom':'Julian Reinoso'
+								/*'Experience':['exp1', 'exp2']
+								'Edad':'22',
+								'Nacimiento':'23/6/1994',*/
+								,
+
+								'about':'I am 21 years old and developer for GlobalLogic .I have been coding websites',
+
+								'exp':[{'lugar':'GL','periodo':'2010-2012'} ,{'lugar':'otro','periodo':'2012-2013'}]
+
+							};
+
+							var  jqObj =$['<div></div>'];//div li u otro
+							
+							$.each (cvtest,function(key,value)
+							{
+
+							
+
+								if (typeof value == 'string')
+								{
+									$('#'+key).html(value);
+
+								}
+								else
+								{
+									var ul =$('<ul></ul>');
+									 $.each(value,function(k,v)//como estamos rrecoriendo un array k es el numero de indice
+									 {
+									 	var li =$('<li></li>');
+									 	li.html(v);
+									 	ul.append(li);
+									 });
+							       $('#'+key).append(ul);
+
+
+								}
+							});
+
+							//////////////////////////////////////////sevidor
+
+
+							$.getJSON ('cv.json', function (cv) {
+							 console.log('holaaa');
+							}
+
+							 );
+														
+
+
+
+
+
+							</script>
+
+						</body>
+</html>

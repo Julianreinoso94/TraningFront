@@ -1,0 +1,33 @@
+0)terner instalado el node.js en el equipo
+
+1)Crear la carpeta llamada Servidor en cualquier lugar.
+
+2)Crear adentro de la carpeta un archivo llamado index.js
+
+3)el archivo index.js q se crearon ingresar lo siguiente:
+
+var connect = require('connect');
+var serveStatic = require('serve-static');
+connect().use(serveStatic(__dirname)).listen(8080, function(){
+    console.log('Server running on 8080...');
+});
+
+4)abrir el gitbash desde la carperta servidor y escribir:
+primero:
+
+ a)npm install connect —save
+
+despues:
+ a1)npm install serve-static --save
+
+
+5)y por ultimo en el bash ejecutar:
+
+node index.js
+
+
+6)esto va a ejecutar el serividor y hay que abrirlo desde el navegador escribiendo: Localhost:8080/ejercicioIntro
+
+7)dentro de la carpeta server pegar todas las carpetas que quiero correr
+
+
