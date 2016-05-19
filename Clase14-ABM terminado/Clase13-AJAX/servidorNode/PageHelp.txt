@@ -1,0 +1,3 @@
+http://expressjs.com/es/guide/using-middleware.html
+http://www.restapitutorial.com/lessons/httpmethods.html
+https://carlosazaustre.es/blog/como-crear-una-api-rest-usando-node-js/
