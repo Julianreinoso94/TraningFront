@@ -1,6 +1,8 @@
 $(function(){
+	var form = $('form'),
+	 form.find('input[type=submit]'),
+        form.on('click', onClick);//agrega el click al click del boton
 
-	$('input[type=submit]').on('click', onClick);
 
 	function onClick(){
 		$.ajax({
