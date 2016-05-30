@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<style type="text/css">
+	
+
+
+</style>
+
+	<title>Todo</title>
+</head>
+<body>
+
+ <div class="container">
+  <form class="form-inline" role="form">
+     <div class="form-group">
+       <label for="tarea">Tarea:</label>
+       <input type="text" class="form-control" id="tarea" placeholder="Escribe aqui tu tarea">
+   </div>
+    </form>
+ </div>
+ <div class="container contenido" id="main">
+ 
+ </div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+
+
+  $(function()
+  {
+        	$('form').on('submit', agregarTarea);//click en el submit va a  agregar tarea
+
+                       
+                       function agregarTarea(){
+                           
+   
+                           var newTarea = agretarTareaHtml(),
+                               newMain = $('#main').append(newTarea);
+                               limpiarInput ();
+                                var  a= $('#tarea').val();
+                           //console.log (newTarea);
+
+                           return false;
+                    }
+
+                    function agretarTareaHtml () {
+                       var a=( $('#tarea').val());
+                        var taskTemplate='<div class="row">'+ a+ '<input type="button" class="tarea .glyphicon .glyphicon-remove' + '" value="X"></div>';
+                     
+                        
+                      return taskTemplate;
+                    }
+
+                    function  limpiarInput () {
+                    $('body').on('click','.tarea',  function(e) {
+                            e.preventDefault();
+                            var tarea = $(this).parent();
+                            tarea.remove();
+                            console.log(tarea);
+                    });
+                      }
+
+                      function getTaskHtml ()
+                      {
+
+                      }
+
+    });
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+function getpersona
+{
+ var cadenaHtml='';
+
+    cadenaHtml += '<div class="row"> <span class="col-xs-3"> ID: '+ data.id 
+                   + '</span > <span class="col-xs-3"> Nombre: '+ data.nombre 
+                   + '</span > <span class="col-xs-3"> Edad: '+ data.edad 
+                   + '</span > <span class="col-xs-3"> Email: '+ data.email
+                   + '</span></div>';
+
+    return cadenaHtml;
+}
