@@ -1,0 +1,9 @@
+Replace 
+___
+carga el archivo
+asigna a strnewstring = el body.html().remplaza  una 'o' por--
+
+$(document).ready(function() {
+    var strNewString = $('body').html().replace(/\o/g,'---');
+    $('body').html(strNewString);
+});
