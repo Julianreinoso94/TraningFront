@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+      <body>
+        <div class="container">
+          <form>
+                <label>Tarea:</label>
+                <input type="text" placeholder="Ingrese una nueva tarea">
+                <input type="date" >
+                <input type="submit" value="ingresar">
+
+          </form>
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+        <script type="text/javascript">
+         $(function()
+         {
+           var $form = $('form'),
+           taskInput= $form.find('input[type=text]'),
+           taskdate= $form.find('input[type=date]'),
+           task=[];
+
+          $form.on('submit',onSubmit),
+
+           function onSubmit()
+           {
+              if(taskInput.val().length && taskdate.val().length)//valida si tiene algo
+              {
+                task.push
+                ({
+                  name:taskinput.val(),
+                  date:taskdate.val(),
+
+                });
+              }
+              return false;
+
+           }
+
+
+         });//fin function
+        </script>
+
+
+      </body>
+
+</html>
