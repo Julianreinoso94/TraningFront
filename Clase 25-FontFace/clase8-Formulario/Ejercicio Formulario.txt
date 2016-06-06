@@ -1,0 +1,8 @@
+_Nombre 
+_email
+edad
+sexo(radio)
+Comentario(textArea)
+-Estoy de acuerdo con los terminos y condiciones
+
+http://librosweb.es/libro/bootstrap_3/capitulo_2/desplazando_columnas.html offset
