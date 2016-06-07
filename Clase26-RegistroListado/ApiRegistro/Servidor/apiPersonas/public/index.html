@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+	<style >
+     .negrita
+     {
+     	font-weight: bold;
+     }
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:#fff;
+}
+
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btnAgregar {background-color: #008CBA;} /* Blue */
+.btnEliminar {background-color: #f44336;} /* Red */ 
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+.btnModificar {background-color: #555555;} /* Black */
+.btnMostrarUsuario {background-color: #e7e7e7;color:black;} 
+
+.caja
+{
+	  text-align: center;
+}
+.caja>button {
+  display: inline-block;
+}
+
+
+	</style>
+
+</head>
+
+
+
+
+
+<body>
+	<div class="container">
+	<div class="row">
+            <div class="col-md-1 danger">
+				
+			</div>
+             <div class="col-md-8 caja">
+
+	<header> <h3></h3></header>
+	          </div>
+	          <div class="col-md-3">
+	          </div>
+
+	</div>
+
+
+
+
+        <div class="row">
+            <div class="col-md-1 danger">
+				
+			</div>
+             <div class="col-md-10 ">
+			     <form class="form" >
+
+			    
+
+					<div class="here_table table-responsive" ></div> <!-- Tablaaa -->
+			
+
+
+			     </form>
+			</div>
+			<div class="col-md-1 has-danger">
+				
+			</div>
+
+
+
+	    </div><!-- fin row -->
+	         
+	          <div class="row">
+            <div class="col-md-1 danger">
+				
+			</div>
+             <div class="col-md-10 caja">
+                          <input type="text" class="form-control" id="id" placeholder="ID">
+			   			 <input type="text" class="form-control" id="nombre" placeholder="Nombre" >
+			   			 <input type="text" class="form-control" id="edad" placeholder="Edad" >
+			   			  <input type="email" class="form-control" id="email" placeholder="Email" >
+			 
+             				<button class="btnAgregar" id="agregar">Agregar</button>
+							<button class="btnAcualizar" id="actualizar">Actualizar</button>
+							<button class="btnEliminar" id="eliminar">Eliminar</button>
+							<button class="btnModificar" id="modificar">Modificar</button>	
+							<button class="btnMostrarUsuario" id="obtener">Usuario</button>
+             </div>
+             <div class="col-md-1 danger">
+				
+			</div>
+
+
+
+			</div>
+
+	<script type="text/javascript" src="js/jquery-2.2.3.js"></script>
+	<script type="text/javascript" src="js/personas.js" ></script>
+</body>
+</html>
