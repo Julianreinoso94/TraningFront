@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+				  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaRi75xwaN1nzQdrG3g-HqQX7vLPbVjzQ&callback=initMap"></script>
+
+				  <link rel="stylesheet" href="css\bootstrap.min.css">
+				   <link rel="stylesheet" href="css\style.css">
+				   <link rel="stylesheet" href="http://joomla.templaza.net/profiler/templates/tz_profiler/fonts/OpenSansRegular/stylesheet.css" type="text/css">
+					<link rel="stylesheet" href="http://joomla.templaza.net/profiler/templates/tz_profiler/fonts/bebas_neueregular/stylesheet.css" type="text/css">
+
+				    <style type="text/css">
+				      html, body { height: 100%; margin: 0; padding: 0; }
+				      #map { width: 500px; height: 400px; }
+				    </style>
+
+				    <title>Gmaps Proyecto Final</title>
+  </head>
+  <body>
+     <div class="container-fluid">
+			     <div class="header">
+					  <h1>Address Map</h1>      
+				</div>
+				<div class="row">
+						<div class="col-md-4"></div>
+						<div class="col-md-4"><div id="map"></div></div>
+						<div class="col-md-4"></div>
+			    </div>
+   
+    <script type="text/javascript">
+             var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+			var labels = 'AB';
+			var labelIndex = 0;
+			var map;
+			var cont=0;
+
+
+			function initMap() {//funcion inicia con el mapa
+						 var myLatLng = {lat: -34.603298, lng:-58.373486};
+
+						  map = new google.maps.Map(document.getElementById('map'), { //constructor centra el mapa en el lugar
+						    center: myLatLng,
+						    zoom: 15
+						  });
+
+						   // This event listener calls addMarker() when the map is clicked.
+						   
+						  google.maps.event.addListener(map, 'click', function(event) {
+								  	if (cont <=1)
+								  	{
+										    cont++;
+									        console.log(cont);
+										    addMarker(event.latLng, map);
+										     // Add a marker at the center of the map.
+										  //addMarker(myLatLng , map);
+									}  
+						     });
+
+					infoWindow = new google.maps.InfoWindow();
+
+								}
+     
+
+       // Adds a marker to the map.
+function addMarker(location, map) {
+  // Add the marker at the clicked location, and add the next-available label
+  // from the array of alphabetical characters.
+       if(cont==1)
+       {
+		  var marker = new google.maps.Marker({
+				    position: location,
+				    label: labels[labelIndex++ % labels.length],
+				    draggable:true,
+				    map: map,
+				    icon: iconBase + 'schools_maps.png'
+		  });
+		}
+         if(cont==2)
+       {
+		   var marker = new google.maps.Marker({
+				    position: location,
+				    label: labels[labelIndex++ % labels.length],
+				    draggable:true,
+				    map: map,
+				   
+		  });
+		}
+
+
+    google.maps.event.addListener(marker, 'click', function(){
+        openInfoWindow(marker);
+    });
+
+
+		}
+
+			//google.maps.event.addDomListener(window, 'load', initialize);
+
+			//////////////////////////////////get lat and long of marker////////
+			var infoWindow = null;
+ 
+function openInfoWindow(marker) {
+    var markerLatLng = marker.getPosition();
+    infoWindow.setContent([
+        'La posicion del marcador es:'+
+        markerLatLng.lat()+
+        'Long'+
+        markerLatLng.lng()
+    ].join(''));
+    infoWindow.open(map, marker);
+}
+
+
+
+
+    </script>
+    
+
+  </body>
+</html>

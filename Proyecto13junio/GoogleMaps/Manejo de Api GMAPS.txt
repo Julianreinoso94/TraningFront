@@ -1,0 +1,10 @@
+https://developers.google.com/maps/documentation/javascript/markers#marker_labels
+
+//Agregar latitud y longitud de info
+http://jafrancov.com/2010/09/draggable-marker-getting-lat-lng-gmaps-api-v3/
+
+//localizar coordenadas google maps 
+https://www.youtube.com/watch?v=pXTlvWIru8w&feature=youtu.be
+
+//Gmaps.js add/remove markers from array
+http://stackoverflow.com/questions/24980094/gmaps-js-add-remove-markers-from-array
